@@ -1,4 +1,4 @@
-Progress Update after Tuesday Morning Session
+**Progress Update after Tuesday Morning Session**
 Installed VSwitch on Ubuntu Server Machine
 Created and assigned interfaces for future VLANS 
 Environment is ready to start matching the actual final Network design (currently using temporary addresess/ports just to have everything setup)
