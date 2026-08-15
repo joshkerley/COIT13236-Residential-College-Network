@@ -1,29 +1,26 @@
 ## Project Progress
 
-Reviewed the latest group progress and updated network design.
+Reviewed the latest progress of the Residential College Network project and the updated network design.
 
-My responsibility is focused on the **monitoring and security component** of the Residential College Network.
+Completed my assigned **Responsible Network Use Policy** section. The policy defines expectations for residents, guests, staff and other authorised users when using the Residential College Network. It covers authorised network access, account and device security, prohibited activities, responsible use of shared network resources, network monitoring, incident reporting and consequences of network misuse.
 
-The latest design includes a dedicated **Monitoring/Security VLAN 70** with the planned gateway `10.50.70.1/24` and a dedicated Monitoring Server VM.
+I also reviewed how the policy relates to the technical security controls planned for the project, including VLAN separation, Network Access Control (NAC), firewall restrictions, monitoring and the quarantine network.
 
-The current design identifies **Wazuh/Suricata** for monitoring and security detection.
+## Research
 
-I also reviewed the planned **Quarantine VLAN 80**, which is intended to isolate problematic or non-compliant devices from the normal network.
+Researched guidance from the Australian Cyber Security Centre (ACSC) and Australian Signals Directorate relating to responsible system use, network security, user authentication and network segmentation.
 
-## Research / Preparation
+I also started reviewing the technical requirements for my future **Monitoring and Security** implementation responsibilities, including:
 
-Started reviewing and researching the planned monitoring environment, including:
-
+* Monitoring/Security VLAN 70
+* Monitoring Server VM
 * Wazuh for security monitoring and log analysis
 * Suricata for network intrusion detection
 * Security alerts and suspicious activity detection
-* Monitoring network traffic
-* The purpose of a dedicated monitoring VLAN
-* The purpose of the quarantine VLAN
-* How the monitoring component will integrate with the rest of the network
+* Quarantine VLAN 80
 
-## Current Progress
+## Current Progress / Next Steps
 
-The core network, VLANs and other infrastructure are still being developed by other team members. My monitoring implementation depends on these components being available.
+The monitoring implementation depends on the core network, VLANs and connectivity being configured first. While these components are being completed, I am preparing for the monitoring and quarantine implementation by reviewing the planned architecture and relevant security technologies.
 
-For this reason, my current work is focused on research, understanding the proposed monitoring architecture, and preparing for the later implementation and testing stages.
+Once the required network infrastructure is operational, I will begin configuring and testing the monitoring and quarantine components.
