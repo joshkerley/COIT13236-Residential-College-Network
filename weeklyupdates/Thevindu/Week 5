@@ -24,3 +24,17 @@ I also started reviewing the technical requirements for my future **Monitoring a
 The monitoring implementation depends on the core network, VLANs and connectivity being configured first. While these components are being completed, I am preparing for the monitoring and quarantine implementation by reviewing the planned architecture and relevant security technologies.
 
 Once the required network infrastructure is operational, I will begin configuring and testing the monitoring and quarantine components.
+
+Research Links / Resources Visited
+
+ACSC – Guidelines for Personnel Security
+Used to research system usage policies and user responsibilities.
+Guidelines for Personnel Security - https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/ism/cyber-security-guidelines/guidelines-for-personnel-security
+
+ACSC – Guidelines for Networking
+Used to understand network segmentation, access restrictions and secure network usage.
+Guidelines for Networking - https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/ism/cyber-security-guidelines/guidelines-for-networking
+
+ACSC – Creating Strong Passphrases
+Used to research password/passphrase responsibilities for network users.
+Creating Strong Passphrases - https://www.cyber.gov.au/protect-yourself/securing-your-accounts/passphrases/creating-strong-passphrases
