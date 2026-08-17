@@ -1,1 +1,1 @@
-This project covers the design and simulation of a Residental College Network for a Universtiy. This projected is created by Anshul Bairy, Joshua Kerley and Matthew Hunt.
+This project covers the design and deployment of a Residental College Network for Regional Uni Colleges. This projecteis created by Anshul Bairy, Joshua Kerley, Matthew Hunt Thevindu amd Safwan.
