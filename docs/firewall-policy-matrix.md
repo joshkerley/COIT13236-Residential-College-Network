@@ -207,7 +207,7 @@ T2 is the test the current design would fail without Open vSwitch port isolation
 the test that fails if RADIUS CoA is not permitted through the firewall. Those are the two
 highest-risk items in the policy.
 
-## 7. Open questions for the group
+## 7. Open questions for the group rather than going on based of assumptions
 
 1. What concretely represents University Services? There is no VLAN for it, and without a
    target there is nothing to demonstrate residents being blocked from, which is an MVP
