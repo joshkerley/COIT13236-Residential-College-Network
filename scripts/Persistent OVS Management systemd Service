@@ -1,0 +1,12 @@
+[Unit]
+Description=Open vSwitch VLAN 50 Management Interface
+After=openvswitch-switch.service
+Requires=openvswitch-switch.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/ovs-mgmt50-start.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
