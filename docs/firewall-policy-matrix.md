@@ -31,7 +31,7 @@ allow list is the only defensible position. It is also easier to justify to the 
 easier to test, because every permitted path is written down and can be verified one at a
 time.
 
-## 3. Where each control is enforced
+## 3. Where each control is enforced:
 
 This distinction matters and is easy to get wrong.
 
