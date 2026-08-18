@@ -1,0 +1,27 @@
+#!/bin/bash
+set -e
+
+# Wait for Open vSwitch bridge br0 to exist
+for i in $(seq 1 30); do
+    if ovs-vsctl br-exists br0; then
+        break
+    fi
+    sleep 1
+done
+
+ovs-vsctl br-exists br0
+
+# Create the VLAN 50 internal management interface
+ovs-vsctl --may-exist add-port br0 mgmt50 tag=50 \
+    -- set interface mgmt50 type=internal
+
+# Configure management IP
+ip addr replace 10.50.50.2/24 dev mgmt50
+ip link set mgmt50 up
+
+# Configure default gateway
+ip route replace default via 10.50.50.1 dev mgmt50
+
+# Configure DNS
+resolvectl dns mgmt50 8.8.8.8 1.1.1.1
+resolvectl domain mgmt50 "~."
