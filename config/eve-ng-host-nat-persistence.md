@@ -13,7 +13,7 @@ The EVE-NG host uses `pnet1` as the internal NAT-side interface for the pfSense 
 
 The configuration below restores the `pnet1` IP address, enables IPv4 forwarding, and reapplies the required `iptables` NAT/forwarding rules after each reboot.
 
-> **Security note:** These commands do not contain passwords, API keys, tokens, private certificates, usernames, or public IP addresses. The `172.16.1.0/24` addresses are RFC1918 private addresses and are safe to document publicly. Before publishing any future logs or screenshots, still check for credentials, public IPs, email addresses, project IDs, SSH keys, or other identifying information.
+> **Security note:** These commands do not contain passwords, API keys, tokens, private certificates, usernames, or public IP addresses. The `172.16.1.0/24` addresses are RFC1918 private addresses and are safe to document publicly.
 
 ## 1. Make IPv4 forwarding persistent
 
