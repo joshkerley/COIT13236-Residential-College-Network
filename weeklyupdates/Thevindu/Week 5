@@ -2,13 +2,17 @@
 
 Reviewed the latest progress of the Residential College Network project and the updated network design.
 
-Completed my assigned **Responsible Network Use Policy** section. The policy defines expectations for residents, guests, staff and other authorised users when using the Residential College Network. It covers authorised network access, account and device security, prohibited activities, responsible use of shared network resources, network monitoring, incident reporting and consequences of network misuse.
+Completed my assigned **Responsible Network Use Policy** section. The policy defines expectations for residents, guests, staff
+and other authorised users when using the Residential College Network. It covers authorised network access, account and device 
+security, prohibited activities, responsible use of shared network resources, network monitoring, incident reporting and consequences of network misuse.
 
-I also reviewed how the policy relates to the technical security controls planned for the project, including VLAN separation, Network Access Control (NAC), firewall restrictions, monitoring and the quarantine network.
+I also reviewed how the policy relates to the technical security controls planned for the project, including VLAN separation, Network Access Control (NAC), 
+firewall restrictions, monitoring and the quarantine network.
 
 ## Research
 
-Researched guidance from the Australian Cyber Security Centre (ACSC) and Australian Signals Directorate relating to responsible system use, network security, user authentication and network segmentation.
+Researched guidance from the Australian Cyber Security Centre (ACSC) and Australian Signals Directorate relating to responsible system use, network 
+security, user authentication and network segmentation.
 
 I also started reviewing the technical requirements for my future **Monitoring and Security** implementation responsibilities, including:
 
@@ -21,7 +25,8 @@ I also started reviewing the technical requirements for my future **Monitoring a
 
 ## Current Progress / Next Steps
 
-The monitoring implementation depends on the core network, VLANs and connectivity being configured first. While these components are being completed, I am preparing for the monitoring and quarantine implementation by reviewing the planned architecture and relevant security technologies.
+The monitoring implementation depends on the core network, VLANs and connectivity being configured first. While these components are being 
+completed, I am preparing for the monitoring and quarantine implementation by reviewing the planned architecture and relevant security technologies.
 
 Once the required network infrastructure is operational, I will begin configuring and testing the monitoring and quarantine components.
 
