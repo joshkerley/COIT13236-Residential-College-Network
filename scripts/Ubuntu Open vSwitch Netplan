@@ -1,0 +1,49 @@
+network:
+  version: 2
+  renderer: networkd
+
+  ethernets:
+    ens3:
+      dhcp4: false
+      optional: true
+
+    ens4:
+      dhcp4: false
+      optional: true
+
+    ens5:
+      dhcp4: false
+      optional: true
+
+    ens6:
+      dhcp4: false
+      optional: true
+
+    ens7:
+      dhcp4: false
+      optional: true
+
+    ens8:
+      dhcp4: false
+      optional: true
+
+    ens9:
+      dhcp4: false
+      optional: true
+
+    ens10:
+      dhcp4: false
+      optional: true
+
+    ens11:
+      dhcp4: false
+      optional: true
+
+    ens12:
+      dhcp4: false
+      optional: true
+
+  bridges:
+    br0:
+      interfaces: []
+      openvswitch: {}
