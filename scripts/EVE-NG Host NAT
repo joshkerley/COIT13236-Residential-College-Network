@@ -1,0 +1,40 @@
+#!/bin/bash
+set -e
+
+# EVE-NG private WAN-side gateway
+ip addr replace 172.16.1.1/24 dev pnet1
+ip link set pnet1 up
+
+# NAT traffic toward Google Cloud
+iptables -t nat -C POSTROUTING \
+    -s 172.16.1.0/24 \
+    -o pnet0 \
+    -j MASQUERADE 2>/dev/null || \
+iptables -t nat -A POSTROUTING \
+    -s 172.16.1.0/24 \
+    -o pnet0 \
+    -j MASQUERADE
+
+# Allow outbound traffic
+iptables -C FORWARD \
+    -i pnet1 \
+    -o pnet0 \
+    -j ACCEPT 2>/dev/null || \
+iptables -A FORWARD \
+    -i pnet1 \
+    -o pnet0 \
+    -j ACCEPT
+
+# Allow return traffic
+iptables -C FORWARD \
+    -i pnet0 \
+    -o pnet1 \
+    -m conntrack \
+    --ctstate RELATED,ESTABLISHED \
+    -j ACCEPT 2>/dev/null || \
+iptables -A FORWARD \
+    -i pnet0 \
+    -o pnet1 \
+    -m conntrack \
+    --ctstate RELATED,ESTABLISHED \
+    -j ACCEPT
