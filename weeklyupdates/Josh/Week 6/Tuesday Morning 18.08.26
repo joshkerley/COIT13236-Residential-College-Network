@@ -1,0 +1,9 @@
+## NAT Persistence + Management VLAN
+
+Fixed Google Cloud / EVE-NG NAT persistence
+Created systemd service
+Tested reboot persistence
+Implemented pfSense ↔ OVS trunk
+Created VLAN 50
+Moved Ubuntu Admin VM to 10.50.50.10
+Removed temporary 192.168.1.x
