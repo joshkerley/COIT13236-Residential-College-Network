@@ -1,0 +1,7 @@
+Deleted VLAN 11 and VLAN 12
+Added two test clients to VLAN 10 through Building A
+Configured ens4 and ens5 as VLAN 10 access ports
+Enabled DHCP roughly 10.50.8.2–10.50.15.254
+Both clients successfully got internet
+Added temporary allow rule for testing
+Blocked resident VLAN 10 from accessing the router management IP
