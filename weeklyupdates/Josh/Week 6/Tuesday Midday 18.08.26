@@ -1,0 +1,8 @@
+## VLAN / Isolation Planning
+
+Reviewed VLAN trunk behaviour
+Identified same-VLAN resident isolation problem
+Confirmed Layer 2 isolation was needed
+Found OVS protected=true method
+Reviewed MVP vs stretch goals
+Reassigned implementation responsibilities
