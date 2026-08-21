@@ -1,0 +1,6 @@
+Configured Building A switch
+Fixed the cloned-switch duplicate MAC address issue
+Created the EVE-NG → Linux NIC → OVS port conversion table
+Building A prepared for VLAN 10
+Confirmed Building B and C were not configured yet
+Confirmed residents only need VLAN 10, not VLAN 11/12
